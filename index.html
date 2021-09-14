@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        <li><a href="//www.kfc.ru/" 
+           title="Kentucky Fried Chicken, сокращённо KFC — международная сеть ресторанов общественного питания, специализирующаяся на блюдах из курицы.">абсолютная гиперссылка на главную страницу сайта example.com;</a></li>
+      <li><a href="https://www.kfc.ru/">абсолютная на главную сайта example.com в протоколе https.</a></li>
+      <li><a href="ftp://ftp.mccme.ru/users/d_shcherbakov/test">ссылка на файл на сервере FTP без авторизации.</a></li>
+    <li><a href="ftp://test:password@ftp.mccme.ru/users/d_shcherbakov/test">ссылка на файл на сервере FTP с авторизацией</a></li>
+        <li><a href="https://vk.com/kfcrussia#post-30637940_3884640">ссылку на фрагмент страницы сообщества KFC ВК</a></li>
+          <li><a href="#form">Фрагмент текущей страницы</a></li>
+          <li><a href="https://www.youtube.com/watch?v=8zVmpd85lYs&lang=ru">Cсылку с двумя параметрами в URL</a></li>
+          <li>
+            Навигация KFC <br />
+            <ul>
+                <li><a href="https://www.kfc.ru/" title="Главная страница">Главная</a></li>
+                <li><a href="https://www.kfc.ru/foodorder" title="Меню">Меню</a></li>
+                <li><a href="https://www.kfc.ru/coupons" title="Купоны">Купоны</a></li>
+                <li><a href="https://www.kfc.ru/promo" title="Акции">Акции</a></li>
+                <li><a href="https://www.kfc.ru/restaurants" title="Рестораны">Рестораны</a></li>
+                <li><a href="https://www.kfc.ru/about" title="О компании">Компания</a></li>
+            </ul>
+            <li><a> Ссылка без href </a></li>
+            <li><a href=""> ссылку с пустым href </a></li>
+            <li><a href="//www.kfc.ru/" rel="nofollow">Cсылку, по которой запрещен переход поисковикам</a></li>
+              <li>
+                <a href="//www.kfc.ru/" rel="noindex">
+                    <!--noindex-->
+                        Ссылка, запрещённая для индексации
+                    <!--/noindex--></a></li>
+            <li>Официальный сайт<a href="//www.kfc.ru/"> KFC</a></li>
+            <li>
+              <a href="//www.kfc.ru/">
+                  <img src="https://pngimg.com/uploads/kfc/kfc_PNG9.png" width="430"  height="142" alt="KFC"> 
+                </a>
+              </li>
+            <li>
+            <img src="https://pngimg.com/uploads/kfc/kfc_PNG9.png"  width="430"  height="142" alt="KFC" usemap="#KFC">
+            <map name="KFC">
+                <area shape="poly" coords="183,14,118,66,164,132" href="https://www.kfc.ru/product/1628" alt="KFC">
+                <area shape="rect" coords="184,2,276,140" href="https://www.kfc.ru/product/4440" alt="KFC">
+                <area shape="circle" coords="366,72,45" href="https://www.kfc.ru/product/2381" alt="KFC">
+            </map>
+        </li>
+        <li><a href="./pmi.html">Ссылка в текущем каталоге</a></li>
+        <li><a href="./about/pmi.html">Ссылка в каталоге about</a></li>
+        <li><a href="../pmi.html">Ссылка на уровень выше</a></li>
+        <li><a href="../../pmi.html">Ссылка на 2 уровеня выше</a></li>
+        <li><a href="/">Сокращённая на главную</a></li>
+        <li><a href="/example.html">Сокращённая на внутреннюю</a></li>
+      </ol>
+      <form method="POST" id="form">
+        <label>
+          Имя:<br />
+          <input name="field-name"
+          placeholder="Полковник Сандерс" />
+        </label><br />
+        <label>
+          Email:<br />
+          <input name="field-email" placeholder="test@example.com" type="email">
+        </label><br />
+        <label>
+          Дата рождения:<br />
+          <input name="field-date"
+            value="1952-09-24"
+            type="date" />
+        </label><br />
+        Пол:<br />
+        <label><input type="radio" checked="checked"
+          name="radio-sex" value="Значение1" />
+          Мужской</label>
+        <label><input type="radio"
+          name="radio-sex" value="Значение2" />
+          Женский</label><br />
+          Кол-во конечностей:<br />
+            <label><input type="radio" checked="checked"
+                name="radio-limb" value="Значение1" />
+                0-2</label>
+            <label><input type="radio"
+                name="radio-limb" value="Значение2" />
+                3-4</label>
+            <label><input type="radio"
+                name="radio-limb" value="Значение3" />
+                5-6</label>
+            <label><input type="radio"
+                name="radio-limb" value="Значение3" />
+                7-8</label><br />
+                <label>
+                  Ваши сверхспособности:<br />
+                  <select name="superpower" multiple=multiple>
+                      <option value="Value_1">Безлимитная кола</option>
+                      <option value="Value_2">Бесплатная доставка</option>
+                      <option value="Value_4">Кэшбэк 100% на всё меню</option>
+                  </select>
+              </label><br />
+      
+              <label>
+                  Биография:<br />
+                  <textarea name="BIO" placeholder="Расскажите о себе вкратце"></textarea>
+                  <br />
+              </label>
+      
+              <label>
+                  <input type="checkbox" checked=checked> Ознакомлен с контрактом:<br />
+              </label>
+      
+            <input type="submit" value="Отправить" />
+      </form>
+    </body>
+</html>
